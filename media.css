@@ -34,6 +34,16 @@
   }
 }
 
+@media screen and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero-back/mob-back-@2x.jpg");
+  }
+}
+
 @media only screen and (max-width: 767.98px) {
   .nav-list {
     display: none;
@@ -46,6 +56,14 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 738px;
+  }
+  .hero-section {
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero-back/tablet-back.jpg");
   }
   .logo-header {
     margin-right: 120px;
@@ -73,6 +91,9 @@
   .portfolio-card {
     width: calc((100% - 24px) / 2);
   }
+  .portfolio-image img {
+    width: 356px;
+  }
   .footer-content {
     flex-direction: row;
     justify-content: flex-start;
@@ -97,9 +118,27 @@
   }
 }
 
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero-back/tablet-back@2x.jpg");
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+  }
+  .hero-section {
+    max-width: 1158px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero-back/desktop-back.jpg");
   }
   .logo-header {
     margin-right: 76px;
@@ -126,6 +165,13 @@
   .portfolio-card {
     width: calc((100% - 48px) / 3);
   }
+  .portfolio-image img {
+    width: 360px;
+  }
+  .portfolio-text {
+    border: 1px solid var(--CORNFLOWER, #e7e9fc);
+    background: var(--WHITE, #fff);
+  }
   .footer-content {
     align-items: baseline;
   }
@@ -134,5 +180,15 @@
   }
   .footer-socials {
     margin-right: 80px;
+  }
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero-back/desktop-back@2x.jpg");
   }
 }
