@@ -94,6 +94,9 @@
   .portfolio-image img {
     width: 356px;
   }
+  .portfolio-text {
+    border-top: none;
+  }
   .footer-content {
     flex-direction: row;
     justify-content: flex-start;
@@ -169,6 +172,7 @@
     width: 360px;
   }
   .portfolio-text {
+    border-top: none;
     border: 1px solid var(--CORNFLOWER, #e7e9fc);
     background: var(--WHITE, #fff);
   }
