@@ -1,14 +1,11 @@
 @media screen and (min-width: 375px) {
   .container {
-    max-width: 375px;
+    max-width: 345px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
-  .portfolio-text {
-    border: 1px solid var(--CLOUD, #f4f4fd);
-    background: var(--WHITE, #fff);
-    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  }
-  .team-list {
-    row-gap: 72px;
+  .hero-tittle {
+    margin-bottom: 72px;
   }
   .benefits-list {
     row-gap: 72px;
@@ -16,8 +13,17 @@
   .icon-box {
     display: none;
   }
+  .team-list {
+    row-gap: 72px;
+  }
+  .portfolio-text {
+    border: 1px solid var(--CLOUD, #f4f4fd);
+    background: var(--WHITE, #fff);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  }
   .footer-content {
     row-gap: 72px;
+    justify-content: center;
     align-items: center;
   }
   .footer-desc {
@@ -28,12 +34,35 @@
   }
 }
 
+@media only screen and (max-width: 767.98px) {
+  .nav-list {
+    display: none;
+  }
+  .header-address {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 738px;
   }
-  .portfolio-card {
-    width: calc((100% - 24px) / 2);
+  .logo-header {
+    margin-right: 120px;
+  }
+  .header-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .hero-tittle {
+    margin-bottom: 36px;
+  }
+  .benefit-card {
+    flex-basis: calc((100% - 48px) / 2);
   }
   .team-list {
     row-gap: 64px;
@@ -41,23 +70,43 @@
   .personal-card {
     flex-basis: calc((100% - 48px) / 2);
   }
-  .benefit-card {
-    flex-basis: calc((100% - 48px) / 2);
+  .portfolio-card {
+    width: calc((100% - 24px) / 2);
+  }
+  .footer-content {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
   }
   .footer-desc {
+    justify-content: flex-start;
+    align-items: flex-start;
     margin-right: 24px;
+  }
+  .footer-socials {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .footer-email-box {
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .container {
-    max-width: 1440px;
+    max-width: 1158px;
   }
-  .portfolio-card {
-    width: calc((100% - 48px) / 3);
+  .logo-header {
+    margin-right: 76px;
   }
-  .personal-card {
-    flex-basis: calc((100% - 72px) / 4);
+  .header-contacts {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .hero-tittle {
+    margin-bottom: 48px;
   }
   .benefit-tittle {
     font-size: 20px;
@@ -68,9 +117,14 @@
   .benefit-card {
     flex-basis: calc((100% - 72px) / 4);
   }
-  .benefit-tittle,
-  .benefits-list-text {
-    max-width: 264px;
+  .personal-card {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  .portfolio-card {
+    width: calc((100% - 48px) / 3);
+  }
+  .footer-content {
+    align-items: baseline;
   }
   .footer-desc {
     margin-right: 120px;
